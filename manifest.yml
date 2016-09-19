@@ -1,0 +1,8 @@
+---
+applications:
+- name: bgdeploy
+  memory: 512M
+  instances: 1
+  host: bgdeploy-cdd-${random-word}
+  domain: cfapps.io
+  path: build/libs/bgdeploy-0.0.1-SNAPSHOT.jar
